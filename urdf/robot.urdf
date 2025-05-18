@@ -1,0 +1,263 @@
+<?xml version="1.0" ?>
+<robot name="fuze" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1.0"/> <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/> </inertial>
+    <visual>
+      <origin xyz="0.078 -0.134063 0.03" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+      <material name="wheel_connector_material_1"> <color rgba="0.81176 0.05882 0.27843 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0.078 -0.134063 0.03" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="2.77556e-17 0.17675 0.0761001" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/down_windows.stl"/>
+      </geometry>
+      <material name="down_windows_material">
+        <color rgba="1.0 0.87059 0.87059 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 0.17675 0.0761001" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/down_windows.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.098 0.01875 0.205996" rpy="-1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/top_windows.stl"/>
+      </geometry>
+      <material name="top_windows_material_1"> <color rgba="1.0 0.87059 0.87059 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.098 0.01875 0.205996" rpy="-1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/top_windows.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.1 0.05375 0.15" rpy="1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/body_top.stl"/>
+      </geometry>
+      <material name="body_top_material">
+        <color rgba="1.0 0.04314 0.33333 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1 0.05375 0.15" rpy="1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/body_top.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.098 0.01875 0.205996" rpy="1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/top_windows.stl"/>
+      </geometry>
+      <material name="top_windows_material_2"> <color rgba="1.0 0.87059 0.87059 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0.098 0.01875 0.205996" rpy="1.5708 -2.35347e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/top_windows.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.078 0.134063 0.03" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+      <material name="wheel_connector_material_2"> <color rgba="0.81176 0.05882 0.27843 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0.078 0.134063 0.03" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.078 0.134063 0.03" rpy="1.5708 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+      <material name="wheel_connector_material_3"> <color rgba="0.81176 0.05882 0.27843 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.078 0.134063 0.03" rpy="1.5708 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.078 -0.134062 0.03" rpy="1.5708 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+      <material name="wheel_connector_material_4"> <color rgba="0.81176 0.05882 0.27843 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.078 -0.134062 0.03" rpy="1.5708 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel_connector.stl"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0.17875 0.0772241" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/base_link.stl"/>
+      </geometry>
+      <material name="base_link_main_material">
+        <color rgba="1.0 0.04314 0.33333 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.17875 0.0772241" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/base_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="rear_right_wheel_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/> <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="rear_right_wheel_material">
+        <color rgba="0.0 0.0 0.0 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rear_right_wheel_joint" type="revolute">
+    <origin xyz="-0.111 0.134063 0.03" rpy="-3.14159 -1.5708 0"/> <parent link="base_link"/>
+    <child link="rear_right_wheel_link"/>
+    <axis xyz="0 0 1"/> <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+
+  <link name="front_right_wheel_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="front_right_wheel_material">
+        <color rgba="0.0 0.0 0.0 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="front_right_wheel_joint" type="revolute">
+    <origin xyz="-0.111 -0.134062 0.03" rpy="-3.14159 -1.5708 0"/> <parent link="base_link"/>
+    <child link="front_right_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+
+  <link name="rear_left_wheel_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="rear_left_wheel_material">
+        <color rgba="0.0 0.0 0.0 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rear_left_wheel_joint" type="revolute">
+    <origin xyz="0.111 0.134063 0.03" rpy="-3.14159 1.5708 0"/> <parent link="base_link"/>
+    <child link="rear_left_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+
+  <link name="front_left_wheel_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+      <material name="front_left_wheel_material">
+        <color rgba="0.0 0.0 0.0 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.035" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="front_left_wheel_joint" type="revolute">
+    <origin xyz="0.111 -0.134063 0.03" rpy="-3.14159 1.5708 0"/> <parent link="base_link"/>
+    <child link="front_left_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+
+  <link name="laser_frame"> <inertial>
+      <mass value="0.1"/> <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <geometry>
+        <mesh filename="package://fuze-bot/meshes/lidar.stl"/>
+      </geometry>
+      <material name="lidar_visual_material">
+        <color rgba="1.0 0.87059 0.87059 1.0"/> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://fuze-bot/meshes/lidar.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="lidar_joint" type="fixed"> <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="0 -0.12475 0.15" rpy="0 0 0"/> </joint>
+
+</robot>
+
